@@ -1,5 +1,4 @@
-<div class="container">
-  <h1>All Articles</h1>
+<h1>All Articles</h1>
 
   <ul id="articles">
     <% @articles.each do |article| %>
@@ -9,4 +8,5 @@
     </li>
     <% end %>
   </ul>
-</div>
+
+<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
