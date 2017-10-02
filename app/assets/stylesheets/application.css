@@ -24,6 +24,9 @@ body {
   background-color: #ffffff;
 }
 
+.jumbotron {
+  background-color: #ffffff;
+}
 
 .navbar-light {
   border-bottom: 1px solid black !important;
