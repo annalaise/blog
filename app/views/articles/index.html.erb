@@ -1,12 +1,16 @@
-<h1>All Articles</h1>
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Blog</h4>
 
-  <ul id="articles">
-    <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article_path(article),
-          class: 'article_title', id: "article_#{article.id}" %>
-    </li>
-    <% end %>
-  </ul>
+      <ul class="list-group list-group-flush">
+        <% @articles.each do |article| %>
+        <li class="list-group-item">
+          <%= link_to article.title, article_path(article),
+              class: 'article_title', id: "article_#{article.id}" %>
+        </li>
+        <% end %>
+      </ul>
 
-<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+    <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+  </div>
+</div>

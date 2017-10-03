@@ -18,17 +18,44 @@ body {
   background-image: url('/assets/palms.png');
   background-size: cover;
   height: 100vh;
+  background-color: #ffcccc;
 }
 
-.container {
-  background-color: #ffffff;
+h1, h2, h3, h4 {
+  font-family: 'Caveat Brush', cursive;
+}
+
+.card {
+  margin-top: 20px;
+  border: transparent;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .jumbotron {
   background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10px !important;
 }
 
 .navbar-light {
   border-bottom: 1px solid black !important;
   margin-top: 10px !important;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 30px !important;
+}
+
+.nav-link {
+  font-size: 13px !important;
+}
+
+.about-text {
+  font-size: 12px;
+}
+
+.about-img {
+  margin-bottom: 20px;
 }
