@@ -22,6 +22,20 @@
           </div>
         </div>
       <% end %>
+      <% if alert %>
+        <div class="row">
+          <div class="alert alert-danger" role="alert">
+            <%= alert %>
+          </div>
+        </div>
+      <% end %>
+      <% if notice %>
+        <div class="row">
+          <div class="alert alert-success" role="alert">
+            <%= notice %>
+          </div>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
