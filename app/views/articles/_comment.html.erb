@@ -1,5 +1,12 @@
 <div class="card-text comment">
-  <p>Comment by <%= comment.author_name %></p>
-  <p><%= comment.body %></p>
+  <div class="row">
+    <div class="col-sm-2">
+      <p><%= comment.author_name %></p>
+    </div>
+    <div class="col-sm-10">
+      <p><%= comment.body %></p>
+      <p><small><i>Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</i></small></p>
+    </div>
+  </div>
   <hr>
 </div>
