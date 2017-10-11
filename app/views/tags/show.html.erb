@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <h3>Articles tagged with "<%= @tag.name %>"</h3>
+    </div>
+    <div class="card-text">
+      <ul>
+        <% @tag.articles.each do |article| %>
+          <li><%= link_to article.title, article_path(article) %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
