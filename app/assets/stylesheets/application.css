@@ -1,5 +1,5 @@
 body {
-  background-image: url('/assets/palms.png');
+  background-image: image-url('palms.png');
   background-size: cover;
   height: 100vh;
 }
