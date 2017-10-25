@@ -12,6 +12,10 @@ a {
   color: black;
 }
 
+.link-text {
+  text-decoration: underline;
+}
+
 .card {
   margin-top: 20px;
   border: transparent;
