@@ -11,6 +11,9 @@
         <a class="nav-item nav-link" href="/articles">Blog</a>
         <a class="nav-item nav-link" href="/about">About</a>
         <a class="nav-item nav-link" href="#">Contact</a>
+        <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-item nav-link"  %>
+        <% end %>
       </div>
     </div>
   </nav>
