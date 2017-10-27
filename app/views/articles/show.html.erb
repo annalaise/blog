@@ -4,7 +4,8 @@
     <% if @article.image.exists? %>
       <p><%= image_tag @article.image.url, class: "img-fluid" %></p>
     <% end %>
-    <p class="card-text"><%= @article.body %></p><br />
+    <%= simple_format(@article.body) %>
+
     <p class="card-text">
       <% if @article.tags.size != 0 %>
         Tags:
