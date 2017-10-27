@@ -16,4 +16,7 @@
 /node_modules
 /yarn-error.log
 
+# Ignore initializers
+/initializers/devise.rb
+
 .byebug_history
