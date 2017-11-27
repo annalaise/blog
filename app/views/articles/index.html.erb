@@ -1,19 +1,15 @@
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title">Blog</h4>
-
-      <ul class="list-group list-group-flush">
-        <% @articles.each do |article| %>
-        <li class="list-group-item">
-          <%= link_to article.title, article_path(article),
-              class: 'article_title', id: "article_#{article.id}" %>
-        </li>
-        <% end %>
-      </ul>
-
-  <% if user_signed_in? %>
-    <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
-  <% end %>
-
+<% @articles.each do |article| %>
+  <div class="card">
+    <% if article.image.exists? %>
+      <%= image_tag article.image.url, class: "card-img-top" %>
+    <% end %>
+    <div class="card-block">
+      <div class="centered-content">
+        <p><%= article.title %></p>
+        <%= simple_format(article.body.first(300)) %>
+        <%= link_to "READ MORE", article_path(article), class: 'article_title', id: "article_#{article.id}" %>
+        <hr>
+      </div>
+    </div>
   </div>
-</div>
+<% end %>

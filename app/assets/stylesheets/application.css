@@ -1,11 +1,16 @@
 body {
-  background-image: url('triggerfish.jpg');
+  /*background-image: url('triggerfish.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 100vh;*/
+  font-family: 'Karla', sans-serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Karla', sans-serif;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -19,23 +24,30 @@ a {
 .card {
   margin-top: 20px;
   border: transparent;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 .jumbotron {
   background-color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Karla', sans-serif;
+}
+
+.centered-content {
+  margin-top: 10px;
+  text-align: center !important;
+}
+
+.navigation-bar {
   margin-top: 10px !important;
+  background-color: #ffffff;
 }
 
 .navbar-light {
-  border-bottom: 1px solid black !important;
-  margin-top: 10px !important;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 .navbar-brand {
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav-link {
