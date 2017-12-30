@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # Use devise for authentication
 gem 'devise', '~> 4.0'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,7 +44,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rubocop'
   gem 'rspec'
-  gem 'dotenv-rails'
 end
 
 group :development do
