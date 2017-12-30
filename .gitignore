@@ -20,3 +20,7 @@
 /initializers/devise.rb
 
 .byebug_history
+
+# Ignore files with AWS Credentials
+.env
+/config/s3.yml
